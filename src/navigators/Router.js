@@ -1,6 +1,6 @@
 import {
-  createStackNavigator,
-  createBottomTabNavigator
+	createStackNavigator,
+	createBottomTabNavigator
 } from "react-navigation";
 import { View } from "react-native";
 import React from "react";
@@ -12,46 +12,47 @@ import AddPlanScreen from "screens/Tabs/Plans/AddPlan/";
 import AttendanceScreen from "screens/Tabs/Attendance";
 import ClientsScreen from "screens/Tabs/Clients";
 import ProfileScreen from "screens/Tabs/Profile";
-
+import PartsDetail from "../Screens/Tabs/Plans/PartsDetail";
 export const PlanTab = createStackNavigator(
-  {
-    Plan: PlanScreen,
-    addPlan: AddPlanScreen
-  },
-  {
-    mode: "modal"
-  }
+	{
+		Plan: PlanScreen,
+		addPlan: AddPlanScreen,
+		PartsDetail: PartsDetail
+	},
+	{
+		mode: "modal"
+	}
 );
 export const AttendanceTab = createStackNavigator({
-  Attendance: AttendanceScreen
+	Attendance: AttendanceScreen
 });
 export const ClientsTab = createStackNavigator({
-  Clients: {
-    screen: ClientsScreen,
-    navigationOptions: () => ({
-      headerLeft: null,
-      header: null
-    })
-  }
+	Clients: {
+		screen: ClientsScreen,
+		navigationOptions: () => ({
+			headerLeft: null,
+			header: null
+		})
+	}
 });
 export const ProfileTab = createStackNavigator({
-  Profile: ProfileScreen
+	Profile: ProfileScreen
 });
 
 export const MainTab = createBottomTabNavigator({
-  Plan: PlanTab,
-  Attendance: AttendanceTab,
-  Clients: ClientsTab,
-  Profile: ProfileTab
+	Plan: PlanTab,
+	// Attendance: AttendanceTab,
+	Clients: ClientsTab,
+	Profile: ProfileTab
 });
 
 export const RootNavigator = createStackNavigator({
-  Login: { screen: LoginScreen },
-  Main: {
-    screen: MainTab,
-    navigationOptions: () => ({
-      headerLeft: null,
-      header: null
-    })
-  }
+	Login: { screen: LoginScreen },
+	Main: {
+		screen: MainTab,
+		navigationOptions: () => ({
+			headerLeft: null,
+			header: null
+		})
+	}
 });
