@@ -57,8 +57,6 @@ export default (state = INITIAL_STATE, action) => {
 	const { payload } = action;
 	switch (action.type) {
 		case "SELECTED_CAR_TYPE":
-			console.log("payload", payload);
-
 			return {
 				...state,
 				Clients: Clients.filter(res => res.typeID == payload)

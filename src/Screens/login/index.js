@@ -58,7 +58,6 @@ class login extends Component {
 						error={error.password}
 					/>
 				</View>
-				// <PICKER />
 				<View style={styles.loginView}>
 					<OutlinedBtn name={"Login"} onPress={this.Login} />
 				</View>
