@@ -14,8 +14,8 @@ class Plan extends Component {
 		console.log("shops are", SelectedShops);
 		return (
 			<Container>
-				<View>
-					<Image source={image} resizeMode="contain" />
+				<View style={{ maxHeight: 300 }}>
+					<Image source={image} resizeMode="cover" style={{ maxHeight: 300 }} />
 				</View>
 				<View
 					style={{

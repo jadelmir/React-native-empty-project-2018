@@ -1,4 +1,4 @@
-import Img from "parts/img.png";
+import Img from "parts/IMG1.png";
 
 export const ShopList = [
 	{
@@ -6,27 +6,27 @@ export const ShopList = [
 		shops: [
 			{
 				id: 1,
-				name: "RAMZE ",
-				price: "xxxx",
+				name: " JP-Carpatrs ",
+				price: "40-60",
 				image: Img,
-				location: "BATHA",
-				phoneNumber: "70262321"
+				location: "Jounieh",
+				phoneNumber: "70123456"
 			},
 			{
 				id: 2,
-				name: "RAMZE ",
-				price: "xxxx",
+				name: " JP-Carpatrs ",
+				price: "60-90",
 				image: Img,
-				location: "BATHA",
-				phoneNumber: "70262321"
+				location: "Beirut",
+				phoneNumber: "70123456"
 			},
 			{
 				id: 3,
-				name: "RAMZE ",
-				price: "xxxx",
+				name: " JP-Carpatrs ",
+				price: "100-150",
 				image: Img,
-				location: "BATHA",
-				phoneNumber: "70262321"
+				location: "Dbayeh",
+				phoneNumber: "70123456"
 			}
 		]
 	},
@@ -34,8 +34,8 @@ export const ShopList = [
 		partID: 2,
 		shops: [
 			{
-				id: 2,
-				name: "RAMZE ",
+				id: 4,
+				name: " JP-Carpatrs ",
 				price: "xxxx",
 				image: Img,
 				location: "BATHA",
@@ -48,10 +48,10 @@ export const ShopList = [
 		shops: [
 			{
 				id: 3,
-				name: "RAMZE ",
-				price: "xxxx",
+				name: " JP-Carpatrs ",
+				price: "150-200",
 				image: Img,
-				location: "BATHA",
+				location: "Dbayeh",
 				phoneNumber: "70262321"
 			}
 		]
@@ -61,10 +61,10 @@ export const ShopList = [
 		shops: [
 			{
 				id: 1,
-				name: "RAMZE ",
-				price: "xxxx",
+				name: " JP-Carpatrs ",
+				price: "40-50",
 				image: Img,
-				location: "BATHA",
+				location: "Jounieh",
 				phoneNumber: "70262321"
 			}
 		]
