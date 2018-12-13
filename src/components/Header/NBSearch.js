@@ -10,17 +10,6 @@ import {
 } from "native-base";
 export default class SearchBarExample extends Component {
   render() {
-    return (
-      <Header searchBar rounded style={{ backgroundColor: "#fff" }}>
-        <Item>
-          <Icon name="ios-search" />
-          <Input placeholder="Search" />
-          <Icon name="ios-people" />
-        </Item>
-        <Button transparent>
-          <Text>Search</Text>
-        </Button>
-      </Header>
-    );
+    return <Header searchBar rounded style={{ backgroundColor: "#fff" }} />;
   }
 }

@@ -8,43 +8,35 @@ import PartItem from "./cmp/partItem";
 import { Container } from "native-base";
 import { addPlan, onItemPress } from "./actions";
 class Plan extends Component {
-	static navigationOptions = {
-		title: "Parts"
-		// headerRight: <HeaderRight />
-	};
+  static navigationOptions = {
+    title: "Parts"
+    // headerRight: <HeaderRight />
+  };
 
-	render() {
-		const { markedDates, data, onItemPress } = this.props;
-		return (
-			// <View style={{ flex: 1 }}>
-			// 	<Calendar markedDates={markedDates} />
-			// 	<ITEMS data={data} onItemPress={onItemPress} />
-			// 	<FlatList
-			// 		data={[{ key: "a" }, { key: "b" }]}
-			// 		renderItem={({ item }) => <Text>{item.key}</Text>}
-			// 	/>
-			// </View>
-			<Container>
-				<FlatList
-					data={data}
-					renderItem={({ item }) => (
-						<PartItem
-							name={item.name}
-							Img={item.image}
-							id={item.id}
-							onItemPress={onItemPress}
-						/>
-					)}
-				/>
-			</Container>
-		);
-	}
+  render() {
+    const { markedDates, data, onItemPress } = this.props;
+    return (
+      <Container>
+        <FlatList
+          data={data}
+          renderItem={({ item }) => (
+            <PartItem
+              name={item.name}
+              Img={item.image}
+              id={item.id}
+              onItemPress={onItemPress}
+            />
+          )}
+        />
+      </Container>
+    );
+  }
 }
 const mapStateToProps = ({ PlanRed }) => {
-	const { markedDates, data } = PlanRed;
-	return { markedDates, data };
+  const { markedDates, data } = PlanRed;
+  return { markedDates, data };
 };
 export default connect(
-	mapStateToProps,
-	{ addPlan, onItemPress }
+  mapStateToProps,
+  { addPlan, onItemPress }
 )(Plan);
